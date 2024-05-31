@@ -19,7 +19,8 @@ else if (process.env.NODE_ENV == 'debug') {
 }
 
 else if (process.env.NODE_ENV == 'production') {
-    axios.defaults.baseURL = 'http://api.volcore.xyz/';
+    //axios.defaults.baseURL = 'http://api.volcore.xyz/';
+    axios.defaults.baseURL = 'http://127.0.0.1:9991/';
 }
 if (!axios.defaults.baseURL.endsWith('/')) {
     axios.defaults.baseURL+="/";
